@@ -49,7 +49,7 @@ class TweetRepository {
 
     async getAll(offset, limit) {
         try {
-            const tweet = await Tweet.find().skip(offset).limit(limit);
+            const tweet = await Tweet.find().skip(offset).limit(limit); // .limit is used for pagination , offset is the startpoint 
             return tweet;
         } catch (error) {
             console.log(error);
