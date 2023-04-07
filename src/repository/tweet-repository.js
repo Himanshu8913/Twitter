@@ -22,7 +22,7 @@ class TweetRepository {
 
     async getWithComments(id) {
         try {
-            const tweet = await Tweet.findById(id).populate({path: 'comments'}).lean();
+            const tweet = await Tweet.findById(id).populate({path: 'comments'}).lean(); // .lean --> To convert mongoose object to javascript object
             return tweet;
         } catch (error) {
             console.log(error);

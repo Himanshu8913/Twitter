@@ -16,11 +16,11 @@ app.listen(3000, async () => {
     // });
     // const tweets = await Tweet.find({userEmail: 'user2@example.com'});
     // console.log(tweets);
-    const tweetRepo = new TweetRepository();
-    const tweet = await tweetRepo.create({content: 'Tweet with comment'});
-    console.log(tweet);
-    const comment = await Comment.create({content: 'New Comment'});
-    tweet.comments.push(comment);
-    await tweet.save();
-    console.log(tweet);
+    // const tweetRepo = new TweetRepository();
+    // const tweet = await tweetRepo.create({content: 'Tweet with comment'});
+    // console.log(tweet);
+    // const comment = await Comment.create({content: 'New Comment'});
+    // tweet.comments.push(comment);
+    // await tweet.save();
+    // console.log(tweet);
 });
