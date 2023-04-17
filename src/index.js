@@ -1,6 +1,7 @@
 const express = require('express');
 const connect = require('./config/database');
-const { HashtagRepository } = require('./repository');
+const { HashtagRepository, TweetRepository } = require('./repository/index');
+const TweetService = require('./services/tweet-service.js');
 const app = express();
 
 app.listen(3000, async () => {
@@ -8,7 +9,7 @@ app.listen(3000, async () => {
     await connect();
     console.log('Mongo db connected');
 
-    let repo = new HashtagRepository();
-    const response = await repo.findByName(['Excited', 'CSK']);
-    console.log(response);
+    let service = new TweetService();
+    const tweet = await service.create({content: 'This is my #brand new #tweet #keepCoding'});
+    console.log(tweet);
 });
