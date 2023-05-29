@@ -23,4 +23,19 @@
 
 - Every tweet might be having a hashtag
 
-// https://how-to.dev/how-to-set-up-jest-for-es-module
+```
+Jest Ref: https://how-to.dev/how-to-set-up-jest-for-es-module
+```
+--------------------------------------------------------------------------
+
+# Commands for specific tasks
+
+## To Run Application
+    - npm start
+
+## To Run Test Cases
+    - npm test
+
+## To Get Code Coverage
+    - npm run coverage
+
