@@ -34,7 +34,7 @@ Jest Ref: https://how-to.dev/how-to-set-up-jest-for-es-module
     - npm start
 
 ## To Run Test Cases
-    - npm test
+    - npm test or npm run test
 
 ## To Get Code Coverage
     - npm run coverage
